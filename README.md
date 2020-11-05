@@ -1,5 +1,8 @@
 # PB_INFNET_Python_redes_SO <h1>
 ### Projeto do bloco de Arquitetura de Computadores, Sistemas Operacionais e Redes com Python da INFNET. <h3>
+  
+**IDE utilizada: PyCharm Community**
+**Linguagem de programação: Python**
 
 <hr>
 

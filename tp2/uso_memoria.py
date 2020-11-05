@@ -1,6 +1,8 @@
 import psutil
+
 #variaveis
 memoria = psutil.virtual_memory()
+
 #funcs
 def percentual_memoria():
     """

@@ -2,6 +2,7 @@
 ### Projeto do bloco de Arquitetura de Computadores, Sistemas Operacionais e Redes com Python da INFNET. <h3>
   
 **IDE utilizada: PyCharm Community**
+<br>
 **Linguagem de programação: Python**
 
 <hr>

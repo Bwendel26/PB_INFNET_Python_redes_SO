@@ -6,7 +6,7 @@ Um software cliente-servidor em Python que explore conceitos de arquitetura de r
 
 #### Este TP corresponde à primeira entrega do projeto, no qual o entregável será: <h4>
 
-Um aplicativo simples de apresentação gráfica do monitoramento e análise do computador. Ele deverá ser implementado em Python usando módulos como psutil (para capturar dados do sistema computacional) e Pygame (para exibir graficamente os dados). Junto ao aplicativo, deverá ser entregue um relatório, que deve ser baseado no template localizado neste link.
+Um aplicativo simples de apresentação gráfica do monitoramento e análise do computador. Ele deverá ser implementado em Python usando módulos como psutil (para capturar dados do sistema computacional) e Pygame (para exibir graficamente os dados). Junto ao aplicativo, deverá ser entregue um relatório, que deve ser baseado no template localizado neste link:
 
 Escreva um programa em Python que exiba graficamente através do uso do módulo Pygame:
 

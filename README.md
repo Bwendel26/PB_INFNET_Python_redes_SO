@@ -4,6 +4,10 @@
 **IDE utilizada: PyCharm Community**
 <br>
 **Linguagem de programação: Python**
+<br>
+**Bibliotecas utilizadas:** 
+* Pygame
+* psultil ([documentação](https://psutil.readthedocs.io/en/latest/))
 
 <hr>
 

@@ -66,13 +66,13 @@ Este TP3 corresponde à segunda entrega do projeto e ele é uma alteração do T
 Adicione ao seu programa feito no TP2 informações mais detalhadas de uso de CPU. Você pode adicionar as informações da maneira que achar mais interessante. No entanto, algumas são __obrigatórias__:
 
 1. Alterar o programa feito no TP2 de modo a possuir 5 visualizações diferentes: <h5>
-* Uma para colocar todas as informações associadas ao processador
-* Uma para colocar todas as informações associadas à memória
-* Uma para colocar todas as informações associadas ao Disco
-* Uma para colocar todas as informações associadas ao IP  
-* Todas as anteriores devem ser alteradas caso o usuário clique nas setas esquerda ou direita do teclado. Seguindo sempre uma 
-ordem predefinida, como em um carrossel.
-* Uma última que teria um resumo de todas elas. O qual seria acessado quando o usuário clica na tecla “Barra” do teclado.
+    * Uma para colocar todas as informações associadas ao processador
+    * Uma para colocar todas as informações associadas à memória
+    * Uma para colocar todas as informações associadas ao Disco
+    * Uma para colocar todas as informações associadas ao IP  
+    * Todas as anteriores devem ser alteradas caso o usuário clique nas setas esquerda ou direita do teclado. Seguindo sempre uma 
+    ordem predefinida, como em um carrossel.
+    * Uma última que teria um resumo de todas elas. O qual seria acessado quando o usuário clica na tecla “Barra” do teclado.
 
 2. Alterar a barra de CPU do TP2 para ter barras de CPU associadas a cada núcleo (core);
 3. Adicionar informação de nome/modelo da CPU (brand);

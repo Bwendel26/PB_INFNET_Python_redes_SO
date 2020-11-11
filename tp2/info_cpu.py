@@ -21,4 +21,3 @@ def informacao_cpu():
 
     return informacao
 
-# print(informacao_cpu())

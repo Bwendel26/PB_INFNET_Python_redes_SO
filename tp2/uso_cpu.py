@@ -15,16 +15,16 @@ def percentual_cpu():
     return percentual_usado
 
 
-surface = int_vars.s1
+surface1 = int_vars.s1
 
 def mostra_uso_cpu():
     capacidade = percentual_cpu()
     larg = int_vars.tela_largura - 2*20
     int_vars.tela.fill(int_vars.PRETO)
-    pygame.draw.rect(surface, int_vars.AZUL, (20, 50, larg, 70))
+    pygame.draw.rect(surface1, int_vars.AZUL, (20, 50, larg, 70))
     larg = larg*capacidade/100
-    pygame.draw.rect(surface, int_vars.VERMELHO, (20, 50, larg, 70))
+    pygame.draw.rect(surface1, int_vars.VERMELHO, (20, 50, larg, 70))
     texto_barra = "Uso de CPU (Total: " + str(capacidade) + "%):"
     text = int_vars.font.render(texto_barra, 1, int_vars.BRANCO)
-    int_vars.tela.blit(surface, (0, 0))  # setando divisao tela
+    int_vars.tela.blit(surface1, (0, 0))  # setando divisao tela
     int_vars.tela.blit(text, (20, 10))

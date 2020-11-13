@@ -1,5 +1,4 @@
 import pygame
-import variaveis_interface as int_vars
 from loop_controle import loop_relogio
 # funcs
 from uso_memoria import mostra_uso_memoria

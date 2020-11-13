@@ -13,3 +13,11 @@ tela = pygame.display.set_mode((tela_largura, tela_altura))
 # fonte
 pygame.font.init()
 font = pygame.font.Font(None, 32)
+
+#Surfaces:
+s1 = pygame.surface.Surface((tela_largura, tela_altura / 4))
+s2 = pygame.surface.Surface((tela_largura, tela_altura / 4))
+s3 = pygame.surface.Surface((tela_largura, tela_altura / 4))
+# Adicionar as as infos sobre cpu + ip nas surfaces abaixo.
+s4 = pygame.surface.Surface((tela_largura, tela_altura / 8))
+s5 = pygame.surface.Surface((tela_largura, tela_altura / 8))

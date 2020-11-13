@@ -17,14 +17,16 @@ def percentual_memoria():
 
     return round(percentual_usado, 3)
 
-def mostra_uso_memoria(surface):
+surface = surface = int_vars.s2
+
+def mostra_uso_memoria():
     mem = percentual_memoria()
     larg = int_vars.tela_largura - 2 * 20
     int_vars.tela.fill(int_vars.PRETO)
     pygame.draw.rect(surface, int_vars.AZUL, (20, 50, larg, 70))
     larg = larg * mem / 100
     pygame.draw.rect(surface, int_vars.VERMELHO, (20, 50, larg, 70))
-    int_vars.tela.blit(surface, (0, int_vars.tela_altura / 4))  # setando divisao tela
     texto_barra = "Uso de Memória (Total: " + str(mem) + "GB):"
     text = int_vars.font.render(texto_barra, 1, int_vars.BRANCO)
-    int_vars.tela.blit(text, (20, 10))
+    int_vars.tela.blit(surface, (0, int_vars.tela_altura / 4))  # setando divisao tela
+    int_vars.tela.blit(text, (20, int_vars.tela_altura / 4))

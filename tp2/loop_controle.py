@@ -1,6 +1,6 @@
 import pygame
 
-def loop_relogio(surface, funcao):
+def loop_relogio(funcao):
     # cria relogio
     clock = pygame.time.Clock()
     cont = 60
@@ -13,7 +13,7 @@ def loop_relogio(surface, funcao):
                 terminou = True
         # atualiza desenho
         if cont == 60:
-            funcao(surface)
+            funcao()
             cont = 0
         # Atualiza o desenho na tela
         pygame.display.update()

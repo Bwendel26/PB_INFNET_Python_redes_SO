@@ -6,8 +6,9 @@
 **Linguagem de programação: Python**
 <br>
 **Bibliotecas utilizadas:** 
-* Pygame
+* Pygame ([documentação](https://www.pygame.org/docs/))
 * psultil ([documentação](https://psutil.readthedocs.io/en/latest/))
+* platform ([documentação](https://docs.python.org/3/library/platform.html))
 
 <hr>
 

@@ -15,7 +15,7 @@ def percentual_memoria():
     usada_gb = round((memoria.used/(1024 ** 3)), 3)
     percentual_usado = (usada_gb * 100) / total_gb
 
-    return round(percentual_usado, 3)
+    return round(percentual_usado, 2)
 
 surface2 = int_vars.s2
 

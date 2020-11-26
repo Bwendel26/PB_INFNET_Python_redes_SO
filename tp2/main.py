@@ -10,18 +10,15 @@ pygame.display.set_caption("Gerenciamento computador")
 pygame.display.init()
 
 # Chamada das funcoes:
-# def chama_funcs():
-#     mostra_uso_cpu()
-#     mostra_uso_memoria()
-#     mostra_uso_disco()
+def chama_funcs():
+    mostra_uso_cpu()
+    mostra_uso_memoria()
+    mostra_uso_disco()
 #
-# loop_relogio(chama_funcs)
+loop_relogio(chama_funcs)
 # A funcao para chamar as demais funcoes de uma vez não esta funcionando
 
 # loop_relogio([mostra_uso_cpu, mostra_uso_memoria, mostra_uso_disco])
 
-loop_relogio(mostra_uso_cpu)
-loop_relogio(mostra_uso_memoria)
-loop_relogio(mostra_uso_disco)
 
 pygame.display.quit()

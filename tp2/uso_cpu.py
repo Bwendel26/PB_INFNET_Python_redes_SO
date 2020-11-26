@@ -20,7 +20,7 @@ surface1 = int_vars.s1
 def mostra_uso_cpu():
     capacidade = percentual_cpu()
     larg = int_vars.tela_largura - 2*20
-    int_vars.tela.fill(int_vars.PRETO)
+    # int_vars.tela.fill(int_vars.PRETO)
     pygame.draw.rect(surface1, int_vars.AZUL, (20, 50, larg, 70))
     larg = larg*capacidade/100
     pygame.draw.rect(surface1, int_vars.VERMELHO, (20, 50, larg, 70))

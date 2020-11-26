@@ -8,7 +8,7 @@ def mostra_uso_disco():
     # disk = str(disk)
     disco = psutil.disk_usage('./')
     larg = int_vars.tela_largura - 2 * 20
-    int_vars.tela.fill(int_vars.PRETO)
+    # int_vars.tela.fill(int_vars.PRETO)
     pygame.draw.rect(surface3, int_vars.AZUL, (20, 50, larg, 70))
     larg = larg * disco.percent / 100
     pygame.draw.rect(surface3, int_vars.VERMELHO, (20, 50, larg, 70))

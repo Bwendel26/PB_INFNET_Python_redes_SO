@@ -12,6 +12,3 @@ def informacao_ip():
     ip = dic_interface["Ethernet"][1].address
 
     return ip
-
-
-print(informacao_ip())

@@ -20,6 +20,11 @@ def loop_relogio(funcoes):
                     if func_atual >= len(funcoes):
                         func_atual = 0
                     funcoes[func_atual]()
+                if event.key == pygame.K_LEFT:
+                    func_atual -= 1
+                    if func_atual < 0:
+                        func_atual = len(funcoes) - 1
+                    funcoes[func_atual]()
 
         # atualiza desenho
         if cont == 60:

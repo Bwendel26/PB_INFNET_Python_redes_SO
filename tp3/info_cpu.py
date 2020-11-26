@@ -1,5 +1,7 @@
 import psutil
 import platform
+import variaveis_interface as int_vars
+import pygame
 
 #funcs
 def informacao_cpu():
@@ -21,4 +23,12 @@ def informacao_cpu():
 
     return informacao
 
-print(informacao_cpu())
+surface4 = int_vars.s4
+
+def mostra_info_cpu():
+    int_vars.tela.fill(int_vars.PRETO)
+    info = informacao_cpu()
+    texto_barra = "Info:" + str(info)
+    text = int_vars.font.render(texto_barra, 1, int_vars.BRANCO)
+    int_vars.tela.blit(surface4, (0, 3*int_vars.tela_altura / 4))  # setando divisao tela
+    int_vars.tela.blit(text, (20, 3*int_vars.tela_altura / 4))

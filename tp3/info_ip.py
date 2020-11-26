@@ -1,4 +1,6 @@
 import psutil
+import pygame
+import variaveis_interface as int_vars
 
 #funcs
 def informacao_ip():
@@ -13,5 +15,12 @@ def informacao_ip():
 
     return ip
 
+surface5 = int_vars.s5
 
-print(informacao_ip())
+def mostra_info_ip():
+    int_vars.tela.fill(int_vars.PRETO)
+    info = informacao_ip()
+    texto_barra = "Info: " + str(info)
+    text = int_vars.font.render(texto_barra, 1, int_vars.BRANCO)
+    int_vars.tela.blit(surface5, (0, 4*int_vars.tela_altura / 4))  # setando divisao tela
+    int_vars.tela.blit(text, (20, 4*int_vars.tela_altura / 4))

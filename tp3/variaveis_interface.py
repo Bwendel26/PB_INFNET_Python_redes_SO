@@ -4,6 +4,7 @@ AZUL = (0, 0, 255)
 VERMELHO = (255, 0, 0)
 PRETO = (0, 0, 0)
 BRANCO = (255, 255, 255)
+CINZA = (100, 100, 100)
 dimensoes = [800, 600]
 
 #Iniciando tela

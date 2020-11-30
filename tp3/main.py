@@ -11,6 +11,6 @@ pygame.display.set_caption("Gerenciamento computador")
 pygame.display.init()
 int_vars.tela.fill(int_vars.PRETO)
 
-loop_relogio([mostra_uso_memoria, mostra_uso_disco, cpu_tela])
+loop_relogio([cpu_tela, mostra_uso_memoria, mostra_uso_disco])
 
 pygame.display.quit()

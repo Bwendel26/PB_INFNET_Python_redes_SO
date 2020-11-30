@@ -9,6 +9,7 @@
 * Pygame ([documentação](https://www.pygame.org/docs/))
 * psultil ([documentação](https://psutil.readthedocs.io/en/latest/))
 * platform ([documentação](https://docs.python.org/3/library/platform.html))
+* cpuinfo (TP3) ([documentação](https://github.com/workhorsy/py-cpuinfo))
 
 <hr>
 

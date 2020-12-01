@@ -19,3 +19,10 @@ font = pygame.font.Font(None, 32)
 s1 = pygame.surface.Surface((tela_largura, tela_altura / 3))
 s2 = pygame.surface.Surface((tela_largura, tela_altura / 3))
 s3 = pygame.surface.Surface((tela_largura, tela_altura / 3))
+
+#Surfaces resumo
+sr1 = pygame.surface.Surface((tela_largura, tela_altura / 5))
+sr2 = pygame.surface.Surface((tela_largura, tela_altura / 5))
+sr3 = pygame.surface.Surface((tela_largura, tela_altura / 5))
+sr4 = pygame.surface.Surface((tela_largura, tela_altura / 5))
+sr5 = pygame.surface.Surface((tela_largura, tela_altura / 5))

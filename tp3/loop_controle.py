@@ -1,6 +1,6 @@
 import pygame
 
-def loop_relogio(funcoes):
+def loop_relogio(funcoes, tela_resumo):
     # cria relogio
     clock = pygame.time.Clock()
     cont = 60
@@ -26,9 +26,18 @@ def loop_relogio(funcoes):
                         func_atual = len(funcoes) - 1
                     funcoes[func_atual]()
 
+                # CHAMADA DA TELA DE RESUMO:
+                if event.key == pygame.K_SPACE:
+                    func_atual = 10
+                    if func_atual == 10:
+                        tela_resumo()
+
         # atualiza desenho
         if cont == 60:
-            funcoes[func_atual]()
+            if func_atual == 10:
+                tela_resumo()
+            else:
+                funcoes[func_atual]()
             # for i in range(len(funcoes)):
             #     funcoes[i]()
 

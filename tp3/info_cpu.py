@@ -27,7 +27,7 @@ def mostra_info_cpu():
 
     # Mostra as informações de CPU escolhidas:
     surface3.fill(int_vars.BRANCO)
-    mostra_texto(surface3, "Nome:", "bits", 10)
+    mostra_texto(surface3, "Nome:", "brand_raw", 10)
     mostra_texto(surface3, "Arquitetura:", "arch", 30)
     mostra_texto(surface3, "Palavra (bits):", "bits", 50)
     mostra_texto(surface3, "Frequência (MHz):", "freq", 70)

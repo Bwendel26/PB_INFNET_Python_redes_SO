@@ -1,7 +1,6 @@
 import psutil
 import cpuinfo
 import pygame
-
 from info_cpu import mostra_info_cpu
 import variaveis_interface as int_vars
 
@@ -34,6 +33,7 @@ def mostra_uso_cpu():
     text = int_vars.font.render(texto_barra, 1, int_vars.BRANCO)
     int_vars.tela.blit(surface1, (0, 0))  # setando divisao tela
     int_vars.tela.blit(text, (20, 10))
+
 
 def mostra_uso_de_cada_cpu(s, l_cpu_percent):
     s.fill(int_vars.CINZA)

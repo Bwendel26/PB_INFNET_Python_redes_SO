@@ -5,8 +5,6 @@ import pygame
 import cpuinfo
 
 info = cpuinfo.get_cpu_info()
-
-
 surface3 = int_vars.s3
 
 def mostra_texto(s1, nome, chave, pos_y):

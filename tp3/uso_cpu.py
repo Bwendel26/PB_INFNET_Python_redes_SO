@@ -1,5 +1,4 @@
 import psutil
-import cpuinfo
 import pygame
 from info_cpu import mostra_info_cpu
 import variaveis_interface as int_vars

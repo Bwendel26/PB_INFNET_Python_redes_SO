@@ -1,7 +1,5 @@
 import psutil
-import platform
 import variaveis_interface as int_vars
-import pygame
 import cpuinfo
 
 info = cpuinfo.get_cpu_info()

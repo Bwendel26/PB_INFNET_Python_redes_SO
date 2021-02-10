@@ -11,6 +11,7 @@ surface2 = int_vars.sr2
 surface3 = int_vars.sr3
 surface4 = int_vars.sr4
 surface5 = int_vars.sr5
+
 lista_percentual_cpus = psutil.cpu_percent(1, percpu=True)
 percentual_usado = psutil.cpu_percent(interval=0)
 
@@ -82,6 +83,15 @@ def mostra_uso_disco():
     int_vars.tela.blit(surface4, (0, 3 * int_vars.tela_altura / 5)) #setando divisao tela
     int_vars.tela.blit(text, (20, 3 * int_vars.tela_altura / 5)) # setando posicao do text
 
+#IP
+
+def mostra_info_ip():
+    dic_interface = psutil.net_if_addrs()
+    ip = dic_interface["Ethernet"][1].address
+    texto_barra = "IP: " + str(ip)
+    text = int_vars.font.render(texto_barra, 1, int_vars.BRANCO)
+    int_vars.tela.blit(surface5, (0, 4*int_vars.tela_altura / 5))  # setando divisao tela
+    int_vars.tela.blit(text, (20, 15 + 4*int_vars.tela_altura / 5))
 
 #MAIN
 def main():
@@ -89,3 +99,5 @@ def main():
     mostra_uso_cpu()
     mostra_uso_memoria()
     mostra_uso_disco()
+    mostra_info_ip()
+

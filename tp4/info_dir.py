@@ -7,19 +7,22 @@ localização, data de criação, data de modificação, tipo, etc.
 """
 import os
 import os.path
-import psutil
+import time
 
 
-def dir_info(dir_path, file_path):
-
-    path = dir_path
-    os.chdir(path)
+def dir_info(dir_path):
+    os.chdir(dir_path)
     current_path = os.getcwd()
-    file_size = os.path.getsize(file_path)
+    status = os.stat(".\\")
+    created_time = time.ctime(status.st_ctime)
+    mod_time = time.ctime(status.st_mtime)
 
-    final = "current path:", str(current_path), "\nfile name:", \
-            "Name  -- size:", file_size,  "bytes."
+    final = "current path:" + str(current_path) + \
+            "\npath name: " + "Name" + \
+            "\nCreated at: " + created_time + \
+            "\nLast modification date: " + mod_time
 
     return final
 
-print(dir_info("./", "info_dir.py"))
+
+print(dir_info("./"))

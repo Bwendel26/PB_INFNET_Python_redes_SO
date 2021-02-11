@@ -23,6 +23,3 @@ def dir_info(dir_path):
             "\nLast modification date: " + mod_time
 
     return final
-
-
-print(dir_info("./"))

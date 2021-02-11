@@ -10,7 +10,7 @@ import os.path
 import time
 
 
-def dir_info(file):
+def file_info(file):
     path = ".\\"
     os.chdir(path)
     current_path = os.getcwd()
@@ -30,4 +30,4 @@ def dir_info(file):
     return final
 
 
-print(dir_info("info_files.py"))
+print(file_info("info_files.py"))

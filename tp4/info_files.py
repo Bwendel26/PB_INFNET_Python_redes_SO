@@ -11,7 +11,7 @@ import time
 
 
 def file_info(file):
-    path = ".\\"
+    path = "./"
     os.chdir(path)
     current_path = os.getcwd()
     status = os.stat(file)
@@ -28,6 +28,3 @@ def file_info(file):
             "\nLast modification: " + mod_time
 
     return final
-
-
-print(file_info("info_files.py"))

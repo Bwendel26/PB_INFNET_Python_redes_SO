@@ -27,6 +27,3 @@ def process_info(p_name):
 
     else:
         return "This process do not exist."
-
-
-print(process_info("firefox.exe"))

@@ -17,9 +17,13 @@ def dir_info(dir_path):
     created_time = time.ctime(status.st_ctime)
     mod_time = time.ctime(status.st_mtime)
 
+    path_list = current_path.split("\\")
+    length_path_list = len(path_list) - 1
+    name = path_list[length_path_list]
+
     final = "Current path:" + str(current_path) + \
-            "\nPath name: " + "Name" + \
-            "\nCreated at: " + created_time + \
-            "\nLast modification date: " + mod_time
+            "\nPath name: " + name + \
+            "\nCreated at: " + str(created_time) + \
+            "\nLast modification date: " + str(mod_time)
 
     return final

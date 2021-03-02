@@ -1,10 +1,3 @@
-"""
-Criar uma ou mais funções que retornem ou apresentem
-informações sobre diretórios e arquivos. Tais informações
-podem ser qualquer uma que você achar relevante disponível
-no módulo ‘os’ e ‘psutil’ de Python, como nome, tamanho,
-localização, data de criação, data de modificação, tipo, etc.
-"""
 import os
 import os.path
 import time
@@ -28,6 +21,3 @@ def file_info(file):
             "\nLast modification: " + mod_time
 
     return final
-
-
-print(file_info("view_tkinter.py"))

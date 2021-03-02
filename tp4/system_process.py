@@ -43,7 +43,7 @@ pygame.init()
 pygame.display.init()
 pygame.font.init()
 font = pygame.font.Font(None, 32)
-iv.tela.fill(iv.PRETO)`
+iv.tela.fill(iv.PRETO)
 info = process_info(e_info)
 text_info = "Info: " + str(info)
 text = iv.font.render(text_info, 1, iv.BRANCO)

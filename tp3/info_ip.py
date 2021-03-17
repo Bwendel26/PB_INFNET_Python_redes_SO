@@ -4,8 +4,7 @@ import variaveis_interface as int_vars
 #funcs
 def informacao_ip():
     """
-    Função que retorna o endereço de IP
-    de um computador.
+    This func return the IP computer`s address.
     :return ip:
     """
 

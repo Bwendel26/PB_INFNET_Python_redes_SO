@@ -1,21 +1,23 @@
 import psutil
 import pygame
 import variaveis_interface as int_vars
-#variaveis
+
+# vars
 memoria = psutil.virtual_memory()
+surface1 = int_vars.s1
+
 
 #funcs
 def percentual_memoria():
     """
-    Função que retorna o percentual de memoria RAM
-    utilizado por um computador.
+    This funcs use the psutil lib to get the memory
+    used percent.
     :return: float percentual_usado
     """
 
     mem = psutil.virtual_memory().percent
     return mem
 
-surface1 = int_vars.s1
 
 def mostra_uso_memoria():
     mem = percentual_memoria()

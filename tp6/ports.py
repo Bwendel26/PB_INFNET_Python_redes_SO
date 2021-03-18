@@ -1,10 +1,27 @@
 """
-Criar uma ou mais funções que retornem ou apresentem informações
-sobre as máquinas pertencentes à sub-rede do IP específico.
+Criar uma ou mais funções que retornem ou apresentem
+informações sobre as portas dos diferentes IPs obtidos nessa sub rede.
 """
 import os
 import subprocess
 import platform
+import nmap
+
+nmScan = nmap.PortScanner()
+
+
+def scan_host(host):
+
+    nmScan.scan(host)
+    print(nmScan[host].hostname())
+    for proto in nmScan[host].all_protocols():
+        print('----------')
+        print('Protocolo : %s' % proto)
+
+        lport = nmScan[host][proto].keys()
+        #lport.sort()
+        for port in lport:
+            print ('Porta: %s\t Estado: %s' % (port, nmScan[host][proto][port]['state']))
 
 
 def ping_code(hostname):
@@ -47,9 +64,18 @@ def verify_hosts(base_ip):
     return host_validos
 
 
-# calls
+def main():
+    for item in host_validos:
+        print("Verificando", item)
+        print(scan_host(item))
+        print("\n")
+
+
+
+# MAIN
 ip_string = input("Entre com o ip alvo: ")
-ip_lista = ip_string.split('.')
-base_ip = ".".join(ip_lista[0:3]) + '.'
-print("O teste será feito na sub rede: ", base_ip)
-print("Os host válidos são: ", verify_hosts(base_ip))
+ip_lista = ip_string.split(".")
+base_ip = ".".join(ip_lista[0:3]) + "."
+print("O teste será feito na sub-rede: ", base_ip, "\n")
+host_validos = verify_hosts(base_ip)
+main()

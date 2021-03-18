@@ -33,11 +33,14 @@ def subnet_mask():
 
 #MAIN
 #ARRUMAR FORMATACAO
-default_gateways = default_gateway()
-subnet_masks = subnet_mask()
-print("IP:", ip(), "\nInformações de Gateway: \n", default_gateways, "\nMácaras de sub-rede: \n", subnet_masks)
+def main():
+    print("Dados da rede: ")
+    default_gateways = default_gateway()
+    subnet_masks = subnet_mask()
+    print("\nIP:", ip())
+    print("\n" + "-" * 35)
 
-
+main()
 
 # interfaces = psutil.net_if_addrs()
 # names = []

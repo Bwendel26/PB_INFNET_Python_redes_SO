@@ -1,0 +1,4 @@
+### Criar uma ou mais funções que retornem ou apresentem informações sobre diretórios e arquivos. Tais informações podem ser qualquer uma que você achar relevante disponível no módulo ‘os’ e ‘psutil’ de Python, como nome, tamanho, localização, data de criação, data de modificação, tipo, etc.
+### Usar a função em seu programa para mostrar o resultado. O resultado pode ser em texto formatado impresso na tela ou gráfico, usando o módulo ‘pygame’. Note que o uso do ‘pygame’ é opcional.
+### Criar uma ou mais funções que retornem ou apresentem informações sobre processos do sistema. As informações podem ser: PID, nome do executável, consumo de processamento, consumo de memória, entre outras disponíveis no módulo ‘psutil’ de Python.
+### Usar a função em seu programa para mostrar o resultado. O resultado pode ser em texto formatado impresso na tela ou gráfico, usando o ‘pygame’. Note que o uso do ‘pygame’ é opcional.

@@ -6,7 +6,6 @@ import os
 import subprocess
 import platform
 
-
 def ping_code(hostname):
     """
     Uses the ping of the OS.
@@ -14,12 +13,10 @@ def ping_code(hostname):
     ('-W 3'): Says that the linux have to wait 3
     miliseconds for an answer. that func return the ping response
     """
-
     plataforma = platform.system()
     args = []
     if plataforma == "Windows":
         args = ["ping", "-n", "1", "-l", "1", "-w", "100", hostname]
-
     else:
         args = ['ping', '-c', '1', '-W', '1', hostname]
 

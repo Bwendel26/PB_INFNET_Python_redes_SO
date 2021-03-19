@@ -28,6 +28,3 @@ def file_info(file):
             "\nLast modification: " + mod_time
 
     return final
-
-
-print(file_info("view_tkinter.py"))

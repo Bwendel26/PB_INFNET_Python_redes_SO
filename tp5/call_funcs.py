@@ -2,8 +2,6 @@
 Utilizar o módulo ‘sched’ para chamar as funções criadas
 no TP4 que retornam as informações sobre diretórios e arquivos.
 """
-
-
 from info_dir import dir_info
 from info_files import file_info
 import sched

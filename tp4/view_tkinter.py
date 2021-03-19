@@ -41,7 +41,6 @@ window = Tk()
 window.title("Projeto de Bloco Python")
 window.configure(background=black)
 # Content
-
 #     Dir:
 Label(window, text="Directory info:", bg=black, fg=white, font=font1).grid(row=0, column=0, sticky=W)
 Label(window, text="Please enter with the path:", bg=black, fg=white, font=font2).grid(row=1, column=0, sticky=W)
@@ -50,7 +49,6 @@ textentry.grid(row=2, column=0, sticky=W)
 output_dir = Text(window, width=100, height=7, wrap=WORD, background=white)
 output_dir.grid(row=4, column=0, sticky=W)
 Button(window, text="Submit", width=5, command=lambda: click(output_dir, dir_info)).grid(row=3, column=0, sticky=W)
-
 #      File:
 Label(window, text="\nFile info:", bg=black, fg=white, font=font1).grid(row=5, column=0, sticky=W)
 Label(window, text="Please enter with the file name:", bg=black, fg=white, font=font2).grid(row=6, column=0, sticky=W)
@@ -59,9 +57,7 @@ textentry.grid(row=7, column=0, sticky=W)
 output_file = Text(window, width=100, height=7, wrap=WORD, background=white)
 output_file.grid(row=9, column=0, sticky=W)
 Button(window, text="Submit", width=5, command=lambda: click(output_file, file_info)).grid(row=8, column=0, sticky=W)
-
 # Exit
 Button(window, text="EXIT", width=6, command=close_window).grid(row=10, column=0, sticky=W)
-
 # Run the main loop
 window.mainloop()

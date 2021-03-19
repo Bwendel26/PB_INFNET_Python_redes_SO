@@ -14,11 +14,8 @@ def chama_funcs():
     mostra_uso_cpu()
     mostra_uso_memoria()
     mostra_uso_disco()
-#
+
+
 loop_relogio(chama_funcs)
-# A funcao para chamar as demais funcoes de uma vez não esta funcionando
-
-# loop_relogio([mostra_uso_cpu, mostra_uso_memoria, mostra_uso_disco])
-
-
 pygame.display.quit()
+# loop_relogio([mostra_uso_cpu, mostra_uso_memoria, mostra_uso_disco])

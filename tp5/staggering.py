@@ -7,7 +7,6 @@ escalonamento, deixando indicado no relatório.
 import time
 import sched
 import funcs
-
 scheduler = sched.scheduler(time.time, time.sleep)
 
 

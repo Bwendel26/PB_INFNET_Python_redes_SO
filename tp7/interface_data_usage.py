@@ -2,10 +2,8 @@
 Crie uma ou mais funções que retornem ou apresentem as seguintes 
 informações de redes: Uso de dados de rede por interface.
 """
-
 import psutil
 import time
-
 
 io_status = psutil.net_io_counters(pernic=True)
 nomes = []

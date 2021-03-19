@@ -14,12 +14,12 @@ import sched
 
 scheduler = sched.scheduler(time.time, time.sleep)
 
-print("Frequência max da CPU: " + str(psutil.cpu_freq().max) + "GHz.")
+print("Frequência max da CPU: " + str(psutil.cpu_freq().max) + " MHz.")
 
 
 def print_scheduled(func, name=None):
     try:
-        print("\nInfo: ", func(), " ")
+        print("\nInfo: ", func(), "MHz")
     except:
         print("\nInfo: ", func())
 
